@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liên Hệ</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
 
+  <header class="navbar">
+    <div class="logo-box">
+      <img src="logo.png" alt="Logo" class="logo">
+      <div>
+        <h1>Vẻ Đẹp Việt Nam</h1>
+        <p class="sub-logo">Kết nối và góp ý</p>
+      </div>
+    </div>
+
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="places.html">Địa điểm</a>
+      <a href="food.html">Ẩm thực</a>
+      <a href="culture.html">Văn hoá</a>
+      <a href="contact.html">Liên hệ</a>
+    </nav>
+  </header>
+
+  <section class="page-banner">
+    <h2>Liên Hệ</h2>
+    <p>Gửi ý kiến hoặc chia sẻ với chúng tôi</p>
+  </section>
+
+  <section class="section">
+    <div class="contact-form reveal">
+      <form onsubmit="return fakeSend(event)">
+        <input type="text" placeholder="Họ và tên" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="6" placeholder="Nội dung liên hệ..." required></textarea>
+        <button type="submit">Gửi liên hệ</button>
+      </form>
+      <p id="successMsg" class="success-msg"></p>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <h2>Thông Tin</h2>
+    <p class="long-text">
+      Cảm ơn bạn đã ghé thăm trang web “Vẻ Đẹp Việt Nam”.
+      Chúng tôi luôn trân trọng mọi ý kiến đóng góp để trang web ngày càng hoàn thiện hơn.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 Vẻ Đẹp Việt Nam</p>
+  </footer>
+
+  <button id="topBtn" title="Lên đầu trang">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
