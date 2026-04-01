@@ -376,3 +376,24 @@ footer {
     width: 100%;
   }
 }
+/* =============================
+  Ẩn thanh cuộn toàn trang
+  vẫn cho phép cuộn nội dung
+============================= */
+
+/* Chrome, Edge, Safari */
+body::-webkit-scrollbar {
+  width: 0px;       /* ẩn thanh dọc */
+  height: 0px;      /* ẩn thanh ngang nếu có */
+  background: transparent;
+}
+
+/* Firefox */
+body {
+  scrollbar-width: none;  /* ẩn thanh */
+}
+
+/* Internet Explorer 10+ */
+body {
+  -ms-overflow-style: none; 
+}
